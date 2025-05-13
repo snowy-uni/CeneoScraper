@@ -6,13 +6,6 @@
 ## Algorytm pobierania opinii o pojedynczym produkcie z serwisu Ceneo.pl
 - https://www.ceneo.pl/84514582#tab=reviews
 
-
-
-szukam diva z taka: js_product-reviews js_reviews-hook js_product-reviews-container
-class="user-post user-post__card js_product-review"
-
-select("div[class]")
-
 1. wysłanie zapytania dostępu do strony z opiniami o produkcie
 2. Jeśli operacja zakończy się sukcesem, wyodrębnienie z kodu strony fragmentów odpowiadających poszczególnym opiniom
 3. Dla każdej z opinii wydobycie z kodu HTML poszczególnych składowych i zapisanie ich w postacji złożonych struktur danych
@@ -20,7 +13,7 @@ select("div[class]")
 5. Zapisanie wszystkich opinii w bazie danych
 
 ##
-|sładowa|zmienna|selektor|
+<!-- |sładowa|zmienna|selektor|
 |.......|.......|........|
 |opinia|review|.user-post.user-post__card.js_product-review|
 |identyfikator opinii|review_id|{review_class}[data-entry-id]|
@@ -34,5 +27,5 @@ select("div[class]")
 |ile osób uznało opinię za nieprzydatną|dislikes|.vote-no > span|
 |treść opinii|content|.user-post__text|
 |listę wad|pros|.review-feature__item.review-feature__item--negative|
-|listę zalet|cons|.review-feature__item.review-feature__item--positive|
+|listę zalet|cons|.review-feature__item.review-feature__item--positive| -->
 
